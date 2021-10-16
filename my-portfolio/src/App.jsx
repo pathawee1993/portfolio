@@ -63,6 +63,9 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
+        <Route exact path='/showcase'>
+          <About />
+        </Route>
         <Route exact path='/about'>
           <About />
         </Route>
