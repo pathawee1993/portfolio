@@ -11,7 +11,7 @@ import Education from './components/Education/Education'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Skills from './components/Skills/Skills';
 
-function App() {
+function App() { 
   return (
     <Router>
       <Row className='fullSpace'>
