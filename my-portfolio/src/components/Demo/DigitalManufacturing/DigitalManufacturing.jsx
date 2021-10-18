@@ -1,6 +1,12 @@
-import React, {Component} from 'react'
-import {Card,Row,Col, Button, Container, Image} from 'react-bootstrap'
+import React from 'react'
+import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap'
 import './DigitalManufacturing.css'
+import mc_01 from "/src/components/Demo/DigitalManufacturing/image/machine_001.png"
+import mc_02 from "/src/components/Demo/DigitalManufacturing/image/machine_002.jpg"
+import mc_03 from "/src/components/Demo/DigitalManufacturing/image/machine_003.jpg"
+import mc_04 from "/src/components/Demo/DigitalManufacturing/image/machine_004.jpg"
+import mc_05 from "/src/components/Demo/DigitalManufacturing/image/machine_005.jpg"
+import userImage from "/src/image/myPhoto2.jpg"
 
 var items = [
     {
@@ -9,7 +15,7 @@ var items = [
         start: "2021-10-08 8:00",
         duration: "24hr 14mins",
         end: "",
-        image: "src/components/Demo/DigitalManufacturing/image/machine_001.png",
+        image: mc_01,
         detail: "ajshdkljahsdkljahsdkl",
         display: true
     },
@@ -19,7 +25,7 @@ var items = [
         start: "2021-10-08 8:00",
         duration: "24hr 14mins",
         end: "",
-        image: "src/components/Demo/DigitalManufacturing/image/machine_002.jpg",
+        image: mc_02,
         detail: "ajshdkljahsdkljahsdkl",
         display: true
     },
@@ -29,7 +35,7 @@ var items = [
         start: "2021-10-08 8:00",
         duration: "24hr 14mins",
         end: "",
-        image: "src/components/Demo/DigitalManufacturing/image/machine_003.jpg",
+        image: mc_03,
         detail: "ajshdkljahsdkljahsdkl",
         display: true
     },
@@ -39,7 +45,7 @@ var items = [
         start: "2021-10-08 8:00",
         duration: "24hr 14mins",
         end: "",
-        image: "src/components/Demo/DigitalManufacturing/image/machine_004.jpg",
+        image: mc_04,
         detail: "ajshdkljahsdkljahsdkl",
         display: true
     },
@@ -49,7 +55,7 @@ var items = [
         start: "2021-10-08 8:00",
         duration: "24hr 14mins",
         end: "",
-        image: "src/components/Demo/DigitalManufacturing/image/machine_005.jpg",
+        image: mc_05,
         detail: "ajshdkljahsdkljahsdkl",
         display: true
     },
@@ -155,7 +161,7 @@ class DigitalManufacturing extends React.Component {
                     <span className='userInfo'>Administrator</span><br/>
                 </Col>
                 <Col>
-                    <Image src="src/components/Demo/DigitalManufacturing/image/user.png" rounded className='userImage'/>
+                    <Image src={userImage} rounded className='userImage'/>
                 </Col>
             </Row>
         )
