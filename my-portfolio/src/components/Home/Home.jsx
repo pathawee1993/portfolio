@@ -8,26 +8,30 @@ class Home extends Component {
             <Container>
                 <Carousel>
                     <Carousel.Item interval={1000}>
+                        <h2>Utility Monitoring</h2>
                         <img
-                        className="d-block w-100"
+                        className="d-block w-100 slide-image"
                         src="src\image\digital_manufacturing_01.JPG"
                         alt="First slide"
                         />
                         <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item interval={500}>
+                    <Carousel.Item interval={1000}>
+                        <h2>Digital Manufacturing</h2>
                         <img
-                        className="d-block w-100"
+                        className="d-block w-100 slide-image"
                         src="src\image\digital_manufacturing_02.JPG"
                         alt="Second slide"
                         />
-                        <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={1000}>
+                        <h2>Solar Monitoring System</h2>
+                        <img
+                        className="d-block w-100 slide-image"
+                        src="src\image\UI-Solar Monitoring.JPG"
+                        alt="Second slide"
+                        />
                     </Carousel.Item>
                 </Carousel>
             </Container>

@@ -14,12 +14,12 @@
   display: block;
   margin: auto !important;
 }
-
+/* 
 .nav_icon {
   font-size: 1.25rem
-}
+} */
 
-.show {
+/* .show {
   left: 0
 }
 
@@ -42,9 +42,9 @@
 
 .height-100 {
   height: 100vh
-}
+} */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   body {
       margin: calc(var(--header-height) + 1rem) 0 0 0;
       padding-left: calc(var(--nav-width) + 2rem)
@@ -76,7 +76,7 @@
   .body-pd {
       padding-left: calc(var(--nav-width) + 188px)
   }
-}
+} */
 
 /* .App {
   text-align: center;
@@ -156,7 +156,7 @@ nav ul li a{
 
 .profilePic{
   border-radius: 50%;
-  width: 400px;
+  max-width: 250px;
   margin: 30px;
 }
 
@@ -170,7 +170,7 @@ nav ul li a{
 .social i {
   padding-right: 30px;
   font-size: 25px;
-  color: #9a9b9c;
+  color: #1668bb;
 }
 
 .social i:hover {

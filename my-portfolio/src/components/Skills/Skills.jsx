@@ -18,7 +18,8 @@ const mySkills = [
     "src/image/postgres-logo.png",
     "src/image/python-logo.png",
     "src/image/cpp_logo.png",
-    "src/image/react_logo.png"
+    "src/image/react_logo.png",
+    "src/image/thingsboard_logo_blue.svg"
 ]
 
 class Skills extends Component {

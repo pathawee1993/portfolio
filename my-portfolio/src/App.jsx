@@ -5,11 +5,11 @@ import { Container, Navbar, Row, Col } from 'react-bootstrap';
 
 // Contents
 import Home from'./components/Home/Home'
-import About from'./contents/About'
+import About from'./components/About/About'
+import DigitalManufacturing from'./components/demo/DigitalManufacturing/DigitalManufacturing'
 import Education from'./components/Education/Education'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Skills from './components/Skills/Skills';
-import Contact from './contents/Contact';
 
 function App() {
   return (
@@ -23,13 +23,18 @@ function App() {
           <Route exact path='/'>
             <Home />
           </Route>
+          <Route exact path='/digital-manufacturing'>
+            <DigitalManufacturing />
+          </Route>
           <Route exact path='/education-and-skills'>
             <Education />
             <br/>
             <br/>
             <Skills />
           </Route>
-          
+          <Route exact path='/about'>
+            <About />
+          </Route>
         </Col>
       </Row>
     </Router>

@@ -16,7 +16,7 @@ const myTree = [
     },
     {
         label: 'Demo',
-        href: '/demo',
+        href: '/digital-manufacturing',
         icon: faIcons,
         selected: false,
         display: true,
@@ -29,14 +29,14 @@ const myTree = [
                 display: true,
                 data: []
             },
-            {
-                label: 'Solar Monitoring',
-                href: '/solar-monitoring',
-                icon: faIcons,
-                selected: false,
-                display: true,
-                data: []
-            },
+            // {
+            //     label: 'Solar Monitoring',
+            //     href: '/solar-monitoring',
+            //     icon: faIcons,
+            //     selected: false,
+            //     display: true,
+            //     data: []
+            // },
         ]
     },
     {
@@ -95,29 +95,29 @@ class Sidebar extends Component {
             }
         }
         return (
-            
-            <Row style={{display: data.display ? '': 'none', border: border, marginRight: '0px'}}>
-                <Col>
-                    <Row style={{paddingLeft: paddingLeft,backgroundColor: data.selected ? '#cccccc': ''}}>
-                        <Col md={11}>
-                            <Navbar onClick={() => this.handleClick(data.label)} style={{backgroundColor: 'transparent'}}>
-                                <Nav.Link as={Link} to={data.href}>
-                                    <Navbar.Brand>
-                                        <FontAwesomeIcon icon={data.icon} />
-                                        &nbsp;{data.label}
-                                    </Navbar.Brand>
-                                </Nav.Link>
-                                
-                            </Navbar>
-                        </Col>
-                        <Col md={1} style={{marginTop: 'auto', marginBottom: 'auto', display: 'block'}}>
-                                {arrow}
-                        </Col>
-                    </Row>
-                    {this.getTree(data.data, level+1)}
-                </Col>
-            </Row>
-            
+            <div>
+                <Row style={{display: data.display ? '': 'none', border: border, marginRight: '0px', backgroundColor: data.selected ? '#cccccc': ''}}>
+                    <Col>
+                        <Nav.Link as={Link} to={data.href}>
+                            <Row>
+                                <Col md={11}>
+                                    <Navbar onClick={() => this.handleClick(data.label)} style={{backgroundColor: 'transparent'}}>
+                                        <Navbar.Brand style={{paddingLeft: paddingLeft}}>
+                                            &nbsp;
+                                            <FontAwesomeIcon icon={data.icon} />
+                                            &nbsp;{data.label}
+                                        </Navbar.Brand>
+                                    </Navbar>
+                                </Col>
+                                <Col md={1} style={{marginTop: 'auto', marginBottom: 'auto', display: 'block'}}>
+                                        {arrow}
+                                </Col>
+                            </Row>
+                        </Nav.Link>
+                    </Col>
+                </Row>
+                {this.getTree(data.data, level+1)}
+            </div>
         )
     }
 
@@ -157,7 +157,7 @@ class Sidebar extends Component {
     handleClick(label){
         this.setSelected(label)
         this.setDisplay()
-        console.log(this.tree)
+        // console.log(this.tree)
         this.myNav = this.getTree(this.tree, 0)
         this.forceUpdate()
     }
