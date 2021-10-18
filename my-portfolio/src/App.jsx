@@ -1,13 +1,13 @@
 import './App.css';
 import Sidebar from './components/Sidebar/Sidebar'
-import { Container, Navbar, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 
 // Contents
-import Home from'./components/Home/Home'
-import About from'./components/About/About'
-import DigitalManufacturing from'./components/demo/DigitalManufacturing/DigitalManufacturing'
-import Education from'./components/Education/Education'
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import DigitalManufacturing from './components/Demo/DigitalManufacturing/DigitalManufacturing'
+import Education from './components/Education/Education'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Skills from './components/Skills/Skills';
 

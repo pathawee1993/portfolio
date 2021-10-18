@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Container } from 'react-bootstrap';
 import ReactTypingEffect from 'react-typing-effect'
-import myPhoto from '/src/image/myPhoto.jpg'
+import myPhoto from '/src/image/myPhoto3.jpg'
 import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './About.css'
