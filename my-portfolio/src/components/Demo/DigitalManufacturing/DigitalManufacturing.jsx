@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import {Card,Row,Col, Button, Container, Image} from 'react-bootstrap'
 import './DigitalManufacturing.css'
 import mc_01 from "/src/components/Demo/DigitalManufacturing/image/machine_001.png"
-import mc_02 from "/src/components/Demo/DigitalManufacturing/image/machine_002.png"
-import mc_03 from "/src/components/Demo/DigitalManufacturing/image/machine_003.png"
-import mc_04 from "/src/components/Demo/DigitalManufacturing/image/machine_004.png"
-import mc_05 from "/src/components/Demo/DigitalManufacturing/image/machine_005.png"
+import mc_02 from "/src/components/Demo/DigitalManufacturing/image/machine_002.jpg"
+import mc_03 from "/src/components/Demo/DigitalManufacturing/image/machine_003.jpg"
+import mc_04 from "/src/components/Demo/DigitalManufacturing/image/machine_004.jpg"
+import mc_05 from "/src/components/Demo/DigitalManufacturing/image/machine_005.jpg"
 
 var items = [
     {
