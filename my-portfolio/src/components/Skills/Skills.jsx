@@ -11,15 +11,15 @@ import './Skills.css'
 // import react_logo from "src/image/react_logo.png"
 
 const mySkills = [
-    "src/image/HTML_logo.png",
-    "src/image/CSS_logo.png",
-    "src/image/js-logo.png",
-    "src/image/NodeJS_logo.png",
-    "src/image/postgres-logo.png",
-    "src/image/python-logo.png",
-    "src/image/cpp_logo.png",
-    "src/image/react_logo.png",
-    "src/image/thingsboard_logo_blue.svg"
+    "/src/image/HTML_logo.png",
+    "/src/image/CSS_logo.png",
+    "/src/image/js-logo.png",
+    "/src/image/NodeJS_logo.png",
+    "/src/image/postgres-logo.png",
+    "/src/image/python-logo.png",
+    "/src/image/cpp_logo.png",
+    "/src/image/react_logo.png",
+    "/src/image/thingsboard_logo_blue.svg"
 ]
 
 class Skills extends Component {
