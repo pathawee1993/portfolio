@@ -1,6 +1,8 @@
-import React, {Component} from 'react'
-import {Container } from 'react-bootstrap';
-import './Education.css'
+import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
+import './Education.css';
+import hs_ka from '/src/image/Hska_logo.svg';
+import phraowittayakom from '/src/image/phraowitthayakom_logo.png';
 
 const education = [
     {
@@ -9,7 +11,7 @@ const education = [
         where: "Hochschule Karlsruhe - Technik und Wirtschaft, Germany",
         from: 2014,
         to: 2018,
-        logo: 'src/image/Hska_logo.svg',
+        logo: hs_ka,
         link: "https://www.h-ka.de/"
     },
     {
@@ -18,7 +20,7 @@ const education = [
         where: "Phraowitthayakom School, Thailand",
         from: 2006,
         to: 2012,
-        logo: 'src/image/phraowitthayakom_logo.png',
+        logo: phraowittayakom,
         link: "http://www.pwks.ac.th/phraoweb/index.php"
     }
 ]

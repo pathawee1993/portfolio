@@ -1,12 +1,12 @@
-import React, {Component} from 'react'
-import {Card,Row,Col, Button, Container, Image} from 'react-bootstrap'
+import React from 'react'
+import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap'
 import './DigitalManufacturing.css'
 import mc_01 from "/src/components/Demo/DigitalManufacturing/image/machine_001.png"
 import mc_02 from "/src/components/Demo/DigitalManufacturing/image/machine_002.jpg"
 import mc_03 from "/src/components/Demo/DigitalManufacturing/image/machine_003.jpg"
 import mc_04 from "/src/components/Demo/DigitalManufacturing/image/machine_004.jpg"
 import mc_05 from "/src/components/Demo/DigitalManufacturing/image/machine_005.jpg"
-import userImage from '/src/image/myPhoto2.jpg'
+import userImage from "/src/image/myPhoto2.jpg"
 
 var items = [
     {
