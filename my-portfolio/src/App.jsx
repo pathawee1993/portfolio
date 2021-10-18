@@ -13,26 +13,26 @@ import Contact from './contents/Contact';
 
 function App() {
   return (
-    <Container fluid bg="light">
+    <Router>
       <Row className='fullSpace'>
         <Col xs={2} >
           <Sidebar/>
         </Col>
         <Col xs={8} className='centerThing'>
-          <Router>
-            <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route exact path='/education-and-skills'>
-              <Education />
-              <br/>
-              <br/>
-              <Skills />
-            </Route>
-          </Router>
+          
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/education-and-skills'>
+            <Education />
+            <br/>
+            <br/>
+            <Skills />
+          </Route>
+          
         </Col>
       </Row>
-    </Container>
+    </Router>
   );
 }
 

@@ -2,7 +2,12 @@
   top: 0;
   bottom: 0;
   left: 0;
-  min-height: 99vh !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+}
+
+.fullSpace .col-2{
+  padding: 0px !important;
 }
 
 .centerThing{
