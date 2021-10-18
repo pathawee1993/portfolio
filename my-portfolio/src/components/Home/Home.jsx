@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 import { Carousel, Container } from 'react-bootstrap';
 import './Home.css'
+import digital_manufacturing_01 from "/src/image/digital_manufacturing_01.JPG"
+import digital_manufacturing_02 from "/src/image/digital_manufacturing_02.JPG"
+import solar_monitoring from "/src/image/UI-Solar Monitoring.JPG"
 
 class Home extends Component {
     render(){
@@ -11,7 +14,7 @@ class Home extends Component {
                         <h2>Utility Monitoring</h2>
                         <img
                         className="d-block w-100 slide-image"
-                        src="src\image\digital_manufacturing_01.JPG"
+                        src={digital_manufacturing_01}
                         alt="First slide"
                         />
                         <Carousel.Caption>
@@ -21,7 +24,7 @@ class Home extends Component {
                         <h2>Digital Manufacturing</h2>
                         <img
                         className="d-block w-100 slide-image"
-                        src="src\image\digital_manufacturing_02.JPG"
+                        src={digital_manufacturing_02}
                         alt="Second slide"
                         />
                     </Carousel.Item>
@@ -29,7 +32,7 @@ class Home extends Component {
                         <h2>Solar Monitoring System</h2>
                         <img
                         className="d-block w-100 slide-image"
-                        src="src\image\UI-Solar Monitoring.JPG"
+                        src={solar_monitoring}
                         alt="Second slide"
                         />
                     </Carousel.Item>

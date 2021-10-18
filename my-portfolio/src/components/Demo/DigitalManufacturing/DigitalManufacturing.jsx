@@ -6,6 +6,7 @@ import mc_02 from "/src/components/Demo/DigitalManufacturing/image/machine_002.j
 import mc_03 from "/src/components/Demo/DigitalManufacturing/image/machine_003.jpg"
 import mc_04 from "/src/components/Demo/DigitalManufacturing/image/machine_004.jpg"
 import mc_05 from "/src/components/Demo/DigitalManufacturing/image/machine_005.jpg"
+import userImage from '/src/image/myPhoto2.jpg'
 
 var items = [
     {
@@ -160,7 +161,7 @@ class DigitalManufacturing extends React.Component {
                     <span className='userInfo'>Administrator</span><br/>
                 </Col>
                 <Col>
-                    <Image src="src/components/Demo/DigitalManufacturing/image/user.png" rounded className='userImage'/>
+                    <Image src={userImage} rounded className='userImage'/>
                 </Col>
             </Row>
         )
