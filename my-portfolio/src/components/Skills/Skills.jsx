@@ -30,7 +30,7 @@ class Skills extends Component {
         for (var i = 0; i < mySkills.length; i++){
             cards.push(
                 <Col className='centerThing' style={{padding: '3%'}}>
-                    <Image variant="top" src={mySkills[i]} style={{maxHeight: '100px', maxWidth: '100px', width: 'auto'}}  className='centerThing'/>
+                    <img variant="top" src={mySkills[i]} style={{maxHeight: '100px', maxWidth: '100px', width: 'auto'}}  className='centerThing'/>
                 </Col>
             )
         }
