@@ -1,15 +1,15 @@
-import React, {Component} from 'react'
-import { Carousel, Container, Card, Row, Col, Image } from 'react-bootstrap';
-import './Skills.css'
-import HTML_logo from "/src/image/HTML_logo.png"
-import CSS_Logo from "/src/image/CSS_logo.png"
-import JS_logo from "/src/image/js-logo.png"
-import NodeJs_logo from "/src/image/NodeJS_logo.png"
-import postgres_logo from "/src/image/postgres-logo.png"
-import python_logo from "/src/image/python-logo.png"
-import cpp_logo from "/src/image/cpp_logo.png"
-import react_logo from "/src/image/react_logo.png"
-import thingsboard_logo from "/src/image/thingsboard_logo_blue.svg"
+import React, { Component } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import './Skills.css';
+import cpp_logo from "/src/image/cpp_logo.png";
+import CSS_Logo from "/src/image/CSS_logo.png";
+import HTML_logo from "/src/image/HTML_logo.png";
+import JS_logo from "/src/image/js-logo.png";
+import NodeJs_logo from "/src/image/NodeJS_logo.png";
+import postgres_logo from "/src/image/postgres-logo.png";
+import python_logo from "/src/image/python-logo.png";
+import react_logo from "/src/image/react_logo.png";
+import thingsboard_logo from "/src/image/thingsboard_logo_blue.svg";
 
 const mySkills = [
     HTML_logo,

@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import { Carousel, Container } from 'react-bootstrap';
 import './Home.css'
-import digital_manufacturing_01 from "/src/image/digital_manufacturing_01.JPG"
-import digital_manufacturing_02 from "/src/image/digital_manufacturing_02.JPG"
-import solar_monitoring from "/src/image/UI-Solar Monitoring.JPG"
+import digital_manufacturing_01 from "/src/image/digital_manufacturing_01.jpg"
+import digital_manufacturing_02 from "/src/image/digital_manufacturing_02.jpg"
+import solar_monitoring from "/src/image/solar_monitoring.jpg"
 
 class Home extends Component {
     render(){
