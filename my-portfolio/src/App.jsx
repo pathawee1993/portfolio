@@ -1,84 +1,42 @@
-// import { useState } from 'react'
-// import logo from './logo.svg'
-// import './App.css'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>Hello Vite + React!</p>
-//         <p>
-//           <button type="button" onClick={() => setCount((count) => count + 1)}>
-//             count is: {count}
-//           </button>
-//         </p>
-//         <p>
-//           Edit <code>App.jsx</code> and save to test HMR updates.
-//         </p>
-//         <p>
-//           <a
-//             className="App-link"
-//             href="https://reactjs.org"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Learn React
-//           </a>
-//           {' | '}
-//           <a
-//             className="App-link"
-//             href="https://vitejs.dev/guide/features.html"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Vite Docs
-//           </a>
-//         </p>
-//       </header>
-//     </div>
-//   )
-// }
-
-// export default App
-
 import './App.css';
-import NavBar from './components/NavBar'
+import Sidebar from './components/Sidebar/Sidebar'
+import { Container, Navbar, Row, Col } from 'react-bootstrap';
+
 
 // Contents
-import Home from'./contents/Home'
-import About from'./contents/About'
-import Education from'./contents/Education'
+import Home from'./components/Home/Home'
+import About from'./components/About/About'
+import DigitalManufacturing from'./components/demo/DigitalManufacturing/DigitalManufacturing'
+import Education from'./components/Education/Education'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Skills from './contents/Skills';
-import Contact from './contents/Contact';
+import Skills from './components/Skills/Skills';
 
 function App() {
   return (
     <Router>
-      <div className='App'>
-        <NavBar />
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route exact path='/showcase'>
-          <About />
-        </Route>
-        <Route exact path='/about'>
-          <About />
-        </Route>
-        <Route exact path='/education'>
-          <Education />
-        </Route>
-        <Route exact path='/skills'>
-          <Skills />
-        </Route>
-        <Route exact path='/contact'>
-          <Contact />
-        </Route>
-      </div>
+      <Row className='fullSpace'>
+        <Col xs={2} >
+          <Sidebar/>
+        </Col>
+        <Col xs={8} className='centerThing'>
+          
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/digital-manufacturing'>
+            <DigitalManufacturing />
+          </Route>
+          <Route exact path='/education-and-skills'>
+            <Education />
+            <br/>
+            <br/>
+            <Skills />
+          </Route>
+          <Route exact path='/about'>
+            <About />
+          </Route>
+        </Col>
+      </Row>
     </Router>
   );
 }
