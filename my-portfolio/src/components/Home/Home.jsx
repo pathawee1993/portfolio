@@ -9,11 +9,11 @@ class Home extends Component {
     render(){
         return (
             <Container>
-                <Carousel>
+                <Carousel className='slide-image'>
                     <Carousel.Item interval={1000}>
                         <h2>Utility Monitoring</h2>
                         <img
-                        className="d-block w-100 slide-image"
+                        className="d-block w-100"
                         src={digital_manufacturing_01}
                         alt="First slide"
                         />
@@ -23,7 +23,7 @@ class Home extends Component {
                     <Carousel.Item interval={1000}>
                         <h2>Digital Manufacturing</h2>
                         <img
-                        className="d-block w-100 slide-image"
+                        className="d-block w-100"
                         src={digital_manufacturing_02}
                         alt="Second slide"
                         />
@@ -31,7 +31,7 @@ class Home extends Component {
                     <Carousel.Item interval={1000}>
                         <h2>Solar Monitoring System</h2>
                         <img
-                        className="d-block w-100 slide-image"
+                        className="d-block w-100"
                         src={solar_monitoring}
                         alt="Second slide"
                         />
