@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { Container, Navbar, Row, Col, Nav } from 'react-bootstrap';
-import { faHome, faIcons, faGraduationCap, faAddressCard, faSortUp, faSortDown, faIndustry } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faIcons, faGraduationCap, faAddressCard, faSortUp, faSortDown, faIndustry, faBorderStyle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Sidebar.css'
 import { Link } from 'react-router-dom'
@@ -60,49 +60,73 @@ const myTree = [
 class Sidebar extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            theme: this.props.theme
+        }
+        this.tree = myTree;
+        this.myNav = this.getTree(this.tree, 0);
+        this.updateTheme = this.updateTheme.bind(this);
+    }
 
-        this.tree = myTree
-        this.myNav = this.getTree(this.tree, 0)
-        
+    updateTheme(newTheme){
+        this.setState({theme : newTheme}, () =>{
+            this.myNav = this.getTree(this.tree, 0)
+            this.forceUpdate()
+        })
+    }
+
+    componentDidUpdate() {
+        if (this.state.theme != this.props.theme){
+            this.updateTheme(this.props.theme)
+        }
     }
 
     getTree(data, level){
         var myNav = []
         for (var i = 0; i < data.length; i++){
             myNav.push(
-                this.getNode(data[i], level)
+                this.getNode(data[i], level, i, data.length-1)
             )
         }
         return myNav;
     }
 
-    getNode(data, level){
+    getNode(data, level, index, length){
         var paddingLeft = String(level*20) + 'px';
         var arrow = [];
-        var border = '';
+        var borderColor = '';
+        var borderWidth = ''
         if (level==0){
-            border = '1px solid #eeeeee'
+            borderColor = this.state.theme.bg3
+            if (index != length){
+                borderWidth = '1px 0px 0px 0px';
+                
+            }else{
+                borderWidth = '1px 0px 1px 0px';
+            }
+        }else{
+            borderWidth = '0px';
         }
         if (data.data.length > 0){
             if (data.selected && (level==0)){
                 arrow.push(
-                    <FontAwesomeIcon icon={faSortUp} />
+                    <FontAwesomeIcon icon={faSortUp} style={{color: this.state.theme.color}}/>
                 )
             }else{
                 arrow.push(
-                    <FontAwesomeIcon icon={faSortDown} />
+                    <FontAwesomeIcon icon={faSortDown} style={{color: this.state.theme.color}}/>
                 )
             }
         }
         return (
-            <div>
-                <Row style={{display: data.display ? '': 'none', border: border, marginRight: '0px', backgroundColor: data.selected ? '#cccccc': ''}}>
+            <div key={data.label}>
+                <Row style={{display: data.display ? '': 'none', borderColor: borderColor, borderStyle: 'solid', borderWidth: borderWidth, marginRight: '0px', backgroundColor: data.selected ? this.state.theme.bg2: ''}}>
                     <Col>
                         <Nav.Link as={Link} to={data.href}>
                             <Row>
                                 <Col md={11}>
                                     <Navbar onClick={() => this.handleClick(data.label)} style={{backgroundColor: 'transparent'}}>
-                                        <Navbar.Brand style={{paddingLeft: paddingLeft}}>
+                                        <Navbar.Brand style={{paddingLeft: paddingLeft, color: this.state.theme.color}}>
                                             &nbsp;
                                             <FontAwesomeIcon icon={data.icon} />
                                             &nbsp;{data.label}
@@ -157,7 +181,6 @@ class Sidebar extends Component {
     handleClick(label){
         this.setSelected(label)
         this.setDisplay()
-        // console.log(this.tree)
         this.myNav = this.getTree(this.tree, 0)
         this.forceUpdate()
     }
@@ -165,7 +188,7 @@ class Sidebar extends Component {
     render(){
         
         return (
-            <div className='sidebar'>
+            <div className='sidebar' style={{backgroundColor : this.state.theme.bg1, color: this.state.theme.color}}>
                 <div style={{textAlign: 'center', padding: '3%'}}>
                     <h1>My Portfolio</h1>
                 </div>

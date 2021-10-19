@@ -44,7 +44,7 @@ class Education extends Component {
                     </thead>
                     
                     {education.map((education) => (
-                        <tbody href={education.link} target="_blank" rel='noopender noreferrer'>
+                        <tbody href={education.link} target="_blank" rel='noopender noreferrer' key={education.title}>
                             <tr >
                                 <td><a href={education.link} target="_blank" rel='noopender noreferrer'>{education.degree}</a></td>
                                 <td><a href={education.link} target="_blank" rel='noopender noreferrer'>{education.title}</a></td>

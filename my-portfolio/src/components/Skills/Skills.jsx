@@ -37,7 +37,7 @@ class Skills extends Component {
 
     getTitle(data){
         return (
-            <div style={{textAlign: 'center', top: '0'}}><h6>{data}</h6></div>      
+            <div style={{textAlign: 'center', top: '0'}} key={data}><h6>{data}</h6></div>      
         )
     }
 
@@ -45,7 +45,7 @@ class Skills extends Component {
         var cards = [];
         for (var i = 0; i < data.length; i++){
             cards.push(
-                <div style={{margin: '5%', padding: '5%', border: '1px solid #ddd', borderRadius: '.25rem'}}>
+                <div style={{margin: '5%', padding: '5%', border: '1px solid #ddd', borderRadius: '.25rem'}} key={i}>
                     <img variant="top" src={data[i]} style={{height: '50px', maxWidth: '200px', width: 'auto'}}  className='centerThing'/>
                 </div>
             )

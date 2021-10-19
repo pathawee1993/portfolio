@@ -173,7 +173,7 @@ class DigitalManufacturing extends React.Component {
             for (var i = 0; i < this.state.items.length; i++){
                 if (this.state.items[i].display){
                     myItems.push(
-                        <Col>
+                        <Col key={this.state.items[i].name}>
                             <Card style={{ width: '200px' , height: '280px', backgroundColor: this.getBackgroundColor(this.state.items[i].status)}}>
                                 <Card.Body>
                                 <Card.Title>{this.state.items[i].name}</Card.Title>
