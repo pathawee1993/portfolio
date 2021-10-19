@@ -9,13 +9,13 @@ class Home extends Component {
     render(){
         return (
             <Container>
-                <Carousel className='slide-image'>
+                <Carousel className='carousel-base'>
                     <Carousel.Item interval={1000}>
                         <h2>Utility Monitoring</h2>
                         <img
                         className="d-block w-100"
                         src={digital_manufacturing_01}
-                        alt="First slide"
+                        alt="First slide" 
                         />
                         <Carousel.Caption>
                         </Carousel.Caption>

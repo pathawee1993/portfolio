@@ -1,3 +1,9 @@
 .slide-image{
+    
+}
+
+.carousel-base{
+    padding: 5%;
     height: 80vh;
+    border: 1px solid #ddd;
 }

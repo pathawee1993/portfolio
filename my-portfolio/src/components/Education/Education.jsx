@@ -31,7 +31,7 @@ class Education extends Component {
         return (
             <Container>
                 <div style={{textAlign: 'center', top: '0'}}><h2>Education</h2></div>
-                <Table className="education_table mt-4" bordered hover>
+                <Table className="education_table" bordered hover>
                     <thead>
                         <tr>
                             <th>Degree</th>
