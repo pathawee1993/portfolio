@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { Container, Navbar, Row, Col, Nav } from 'react-bootstrap';
-import { faHome, faIcons, faGraduationCap, faAddressCard, faSortUp, faSortDown } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faIcons, faGraduationCap, faAddressCard, faSortUp, faSortDown, faIndustry } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Sidebar.css'
 import { Link } from 'react-router-dom'
@@ -24,7 +24,7 @@ const myTree = [
             {
                 label: 'Digital Manufactoring',
                 href: '/digital-manufacturing',
-                icon: faIcons,
+                icon: faIndustry,
                 selected: false,
                 display: true,
                 data: []
