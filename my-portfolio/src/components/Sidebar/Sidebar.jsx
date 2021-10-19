@@ -26,7 +26,7 @@ const myTree = [
                 href: '/digital-manufacturing',
                 icon: faIndustry,
                 selected: false,
-                display: true,
+                display: false,
                 data: []
             },
             // {
