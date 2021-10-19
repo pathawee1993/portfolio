@@ -2,6 +2,8 @@
     padding: 3%;
     background-color: #1b1f38;
     height: 80vh;
+    border-radius: .25rem;
+    border: 1px solid #ddd;
 }
 
 .machine-card{ 

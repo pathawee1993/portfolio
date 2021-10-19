@@ -45,7 +45,7 @@ class Skills extends Component {
         var cards = [];
         for (var i = 0; i < data.length; i++){
             cards.push(
-                <div style={{margin: '5%', padding: '5%', border: '1px solid #ddd'}}>
+                <div style={{margin: '5%', padding: '5%', border: '1px solid #ddd', borderRadius: '.25rem'}}>
                     <img variant="top" src={data[i]} style={{height: '50px', maxWidth: '200px', width: 'auto'}}  className='centerThing'/>
                 </div>
             )
