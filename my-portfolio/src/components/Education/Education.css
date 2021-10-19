@@ -1,28 +1,6 @@
-.education .subtopic{
-    margin: 10px 10px 30px 10px !important;
-    text-align: start;
-}
-
-.education_table{
-    width: 100%;
-}
-
 .education_table a:first-child{
-    justify-content: center;
-    display: flex;
-    padding: 15px;
     text-decoration: none;
     color: inherit;
-}
-
-.education_table th {
-    padding: 15px;
-}
-
-.education_table tbody:hover{
-    color: #fff;
-    background: #333;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .education_logo_div{

@@ -1,8 +1,18 @@
 
 
 .typingeffect {
-    font-size: 32px;
+    /* font-size: 32px; */
     font-weight: bold;
     margin-bottom: 30px;
     color: #000000;
+}
+
+.div-about {
+    width: 80%;
+    height: 80vh;
+}
+
+.profilePic{
+    height: auto;
+    width: 100% !important;
 }

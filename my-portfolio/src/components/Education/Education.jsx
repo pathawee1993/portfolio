@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 import './Education.css';
 import hs_ka from '/src/image/Hska_logo.svg';
 import phraowittayakom from '/src/image/phraowitthayakom_logo.png';
@@ -30,16 +30,18 @@ class Education extends Component {
     render(){
         return (
             <Container>
-                <h2>Education</h2>
-                <table className="education_table">
-                    <tr>
-                        <th>Degree</th>
-                        <th>Title</th>
-                        <th>Where</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Logo</th>
-                    </tr>
+                <div style={{textAlign: 'center', top: '0'}}><h2>Education</h2></div>
+                <Table className="education_table mt-4" bordered hover>
+                    <thead>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Title</th>
+                            <th>Where</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Logo</th>
+                        </tr>
+                    </thead>
                     
                     {education.map((education) => (
                         <tbody href={education.link} target="_blank" rel='noopender noreferrer'>
@@ -58,7 +60,7 @@ class Education extends Component {
                             </tr>
                         </tbody>
                     ))}
-                </table>
+                </Table>
             </Container>
         )
     }

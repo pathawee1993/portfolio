@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Container } from 'react-bootstrap';
+import { Container, Card, Row, Col } from 'react-bootstrap';
 import ReactTypingEffect from 'react-typing-effect'
 import myPhoto from '/src/image/myPhoto3.jpg'
 import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons"
@@ -12,18 +12,28 @@ class About extends Component {
     
     render(){
         return (
+
             <Container>
-                <div className='condiv about'>
-                <h1 className="subtopic">About Me</h1>
-                <img src={myPhoto} className="profilePic" />
+                <div style={{textAlign: 'center', top: '0'}}><h2>About Me</h2></div>
                 <br/>
-                <ReactTypingEffect text={["I'm Pathwee Somsak", "I'm daily lerner" ]} speed={80} eraseDelay={200} className='typingeffect'></ReactTypingEffect>
-                <p>I'm programmer with passion and motivation. I'm coding for changing my life and for my family.</p>
-                <a href='https://github.com/pathawee1993' target='_blank' rel='noopender noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
-                &nbsp;&nbsp;
-                <a href='https://web.facebook.com/pathawee.somsak/' target='_blank' rel='noopender noreferrer'><FontAwesomeIcon icon={faFacebook} /></a>
-                </div>
-                
+                <Card style={{ width: '20rem' , marginLeft: 'auto', marginRight: 'auto', display: 'block'}}>
+                    <Card.Body>
+                        <Card.Img src={myPhoto} className="profilePic" />
+                        <Card.Title>
+                            <ReactTypingEffect text={["I'm Pathwee Somsak", "I'm daily lerner" ]} speed={80} eraseDelay={200} className='typingeffect'></ReactTypingEffect>
+                        </Card.Title>
+                        <Card.Text>
+                            I'm programmer with passion and motivation. I'm coding for changing my life and for my family.
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                            <a href='https://github.com/pathawee1993' target='_blank' rel='noopender noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
+                            &nbsp;&nbsp;
+                            <a href='https://web.facebook.com/pathawee.somsak/' target='_blank' rel='noopender noreferrer'><FontAwesomeIcon icon={faFacebook} /></a>
+                            <br/>
+                            <h6>Email : pathawee.somsak@gmail.com (Job-Only)</h6>
+                    </Card.Footer>
+                </Card>
             </Container>
         )
     }
